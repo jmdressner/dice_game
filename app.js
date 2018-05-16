@@ -1,8 +1,8 @@
 //Crazy Travel Scenario Generator
 
-function pickCountry(){
+function pickCountry() {
 	let countries = ['Aruba', 'Bermuda', 'Cameroon', 'Dijibouti', 'Estonia', 'Falkland Islands', 'Gabon', 'Hungary', 'Israel', 'Jordan', 'Kyrgyzstan',
-					'Lesotho', 'Mongolia', 'Namibia', 'Oman', 'Portugal', 'Romania', 'Singapore', 'Taiwan', 'Zimbabwe' ];
+					'Lesotho', 'Mongolia', 'Namibia', 'Oman', 'Portugal', 'Romania', 'Singapore', 'Taiwan', 'Zimbabwe'];
 	let sidesOfDie = 20;
 	let randomNumber = rollDie(sidesOfDie);
 	let chosenCountry = countries[randomNumber];
@@ -18,7 +18,7 @@ function pickMonth() {
 }
 
 function pickTransport() {
-	let transport = ['airplane', 'helicopter', 'submarine', 'ship', 'bus', 'car', 'train', 'horse', 'motorcycle', 'hitchhiking'];
+	let transport = ['jet plane', 'helicopter', 'submarine', 'ship', 'bus', 'carriage', 'train', 'horse', 'bicycle', 'hitchhiking'];
 	let sidesOfDie = 10;
 	let randomNumber = rollDie(sidesOfDie);
 	let chosenTransport = transport[randomNumber];
@@ -34,7 +34,7 @@ function pickTravelCompanion() {
 }
 
 function pickLuggage() {
-	let luggage = ['suitcase', 'satchel', 'plastic bag', 'hat box', 'treasure chest', 'backpack'];
+	let luggage = ['purse', 'satchel', 'plastic bag', 'hat box', 'treasure chest', 'saddlebag'];
 	let sidesOfDie = 6;
 	let randomNumber = rollDie(sidesOfDie);
 	let chosenLuggage = luggage[randomNumber];

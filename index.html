@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta http-equiv="X-US-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Dice Game</title>
+		<meta name="description" content="Description of the page content"/>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1>Crazy Travel Scenario Generator</h1>
-			<div><button onclick="pickDuration()">Duration</button> <button onclick="pickCountry()">Country</button> <button onclick="pickTransport()">Transport</button> <button onclick="pickLuggage()">Luggage</button> <button onclick="pickTravelCompanion()">Companion</button> <button onclick="pickMonth()">Month</button>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 padding-0"></div>
+				<div class="col-md-6 padding-0">
+					<center><h1>Crazy Travel Scenario Generator</h1></center>
+					<center><div class="buttons"><button onclick="pickDuration()">Duration</button> <button onclick="pickCountry()">Country</button> <button onclick="pickTransport()">Transport</button> <button onclick="pickLuggage()">Luggage</button> <button onclick="pickTravelCompanion()">Companion</button> <button onclick="pickMonth()">Month</button>
+					</div></center>
+						<div class="scenario">
+						<br>
+							<p>Congradulations!! You have won a <a id="durationDisplay">________</a> trip to <a id="countryDisplay">________</a>.</p>
+							<p>For your convenience you will be traveling by <a id="transportDisplay">________</a>.<br>Due to limited space we ask that you pack your things in a <a id="luggageDisplay">________</a>.<br>As an additional perk you are allowed to bring your <a id="companionDisplay">________</a> at a discounted rate.<br>This offer is good until <a id="monthDisplay">________</a>.</p>
+							<p>Please enjoy this once in a lifetime vacation offer.<br>Bon Voyage!</p>
+						</div>
+				</div>
+				<div class="col-md-3 padding-0"></div>
 			</div>
-			<p>Congradulations!! You have won a <a id="durationDisplay">________</a> trip to <a id="countryDisplay">________</a>.</p>
-			<p>For your convenience you will be traveling by <a id="transportDisplay">________</a>.<br>Due to limited space we ask that you pack your things in a <a id="luggageDisplay">________</a>.<br>As an additional perk you are allowed to bring your <a id="companionDisplay">________</a> at a discounted rate.<br>This offer is good until <a id="monthDisplay">________</a>.</p>
-			<p>Please enjoy this once in a lifetime vacation offer.<br>Bon Voyage!</p>
+		</div>
 		
 		<script src="app.js"></script>
 	</body>
